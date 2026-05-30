@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 820px;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+header h1 {
+  color: #e8d5b7;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.subtitle a {
+  color: #e8d5b7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 213, 183, 0.15);
+  border-radius: 14px;
+  padding: 24px;
+  color: #eee;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(232, 213, 183, 0.4);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #e8d5b7;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.base-legal {
+  margin-top: 10px;
+  font-size: 0.8rem !important;
+  color: #888 !important;
+  font-style: italic;
+}
+
+.card.highlight {
+  border: 2px solid #e8d5b7;
+  background: rgba(232, 213, 183, 0.08);
+}
+
+.cta {
+  margin-top: 12px;
+  font-size: 0.95rem !important;
+}
+
+.cta a {
+  color: #e8d5b7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #e8d5b7;
+  color: #0d0d0d;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.1s;
+}
+
+footer a:hover {
+  background: #ffecce;
+  transform: translateY(-1px);
+}
+
+.disclaimer {
+  margin-top: 14px;
+  font-size: 0.75rem;
+  color: #666;
+}
